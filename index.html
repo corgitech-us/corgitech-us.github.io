@@ -1,148 +1,70 @@
-<!-- Courtesy: http://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/ -->
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Directions and coupons">
-
-  <title>Zsuzsi's Kewl Deelz</title>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solid Template</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-<header style="height:20%;width:100%;" position="fixed"></header>
-<body>
-  <div class="grid-container">
-    <div class="iframe">
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B08Q7VDWBN&asins=B08Q7VDWBN&linkId=10deea202e5216ace5e83cd29fbd56a2&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-        src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B0833FGJJN&asins=B0833FGJJN&linkId=e169d1f4dade1e36de98641ccd8bcb84&s>how_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-        src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07MVD27HC&asins=B07MVD27HC&linkId=2ac440ec986d71639eec5e799f041d27&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-        src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B08SC5H7XL&asins=B08SC5H7XL&linkId=8f950036aeb001c25da6e8928dc6b4bf&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-        src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07K1SVVFQ&asins=B07K1SVVFQ&linkId=47979f87124a7c95c58a31cf16a5c682&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-        src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B08LCYT3D3&asins=B08LCYT3D3&linkId=2de3e2a956ce5d58f7474ce6ba61a64b&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-        src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B08GWTGPHC&asins=B08GWTGPHC&linkId=0a61995ea6cb834971ae373768e17fff&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B08RYHVTKF&asins=B08RYHVTKF&linkId=9c1ed3bab48a6c4954924809f3ee4e6c&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B015PY2BY8&asins=B015PY2BY8&linkId=67704a1eca832d6bf4db41830e7b9c29&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B08RHGPC24&asins=B08RHGPC24&linkId=e44d42f1824bd151ddacb82b25cc87ac&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B00W8FN3Z4&asins=B00W8FN3Z4&linkId=29608603a9c9b6bc994cee1d7313c58d&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B00JEQG4X8&asins=B00JEQG4X8&linkId=6e1846777aae27e3859b72f395503f26&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B084MFRG4N&asins=B084MFRG4N&linkId=76011cab0cbe63dd31c813c9b708c49b&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07X4TYXWB&asins=B07X4TYXWB&linkId=a73242d64fb17f9c5beae85e64175c70&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B00HF3XT58&asins=B00HF3XT58&linkId=2fe29f594738d70f6f26e4f38906febd&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B071WWC8NX&asins=B071WWC8NX&linkId=11e272c5ec74cd7cacc6847fec33ec67&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B0016FWFDI&asins=B0016FWFDI&linkId=b6d978fb07de08c4be01e8e800a4d08e&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07GNQG4C9&asins=B07GNQG4C9&linkId=c0b2c274e9c12c3f8d8097c1bc83958d&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07L77XY6Z&asins=B07L77XY6Z&linkId=2141e14947b519c7a6527a53a05d4521&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07FK57NHK&asins=B07FK57NHK&linkId=9a160b67e4666c460008113e86943015&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B08QJ6VTPM&asins=B08QJ6VTPM&linkId=e84dc4afa6e74647c05e3a297b0fd96f&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B00KOSP454&asins=B00KOSP454&linkId=ebd60b97ffbfb45b5130764e90c65c7b&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B000LGPD64&asins=B000LGPD64&linkId=a2300543286e6047ca9a4d0c629b2e2b&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B000LGPD64&asins=B000LGPD64&linkId=16b2378c7df04ab7824e5deab0af0e41&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B08HMQ7JDY&asins=B08HMQ7JDY&linkId=568676907c1ed57b5d1b7cab8af967f4&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B0762YS88T&asins=B0762YS88T&linkId=f3ec334b907e2a0e9c46e68c04e0a3e4&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07BGV846K&asins=B07BGV846K&linkId=5cf4fdff2ce96efecda6be190bad72c1&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B000UGSYCA&asins=B000UGSYCA&linkId=220713ceaec005cf43313db545af93f0&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B000UGSYCA&asins=B000UGSYCA&linkId=023cc31d76efe40a1f395d4f3150c4bd&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B08RBMJ5TB&asins=B08RBMJ5TB&linkId=f81c12455ab2134a36d63435a2d5cec1&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B08Y96J4NR&asins=B08Y96J4NR&linkId=a7a07e263099caf99c38706ea04e78bf&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B079HXPVGV&asins=B079HXPVGV&linkId=be7323f9c8110281a0500ae01e8abb48&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B00HE66ZUC&asins=B00HE66ZUC&linkId=786f9a338211f6f93a3b7528313262c1&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B0016FWFDI&asins=B0016FWFDI&linkId=36143b90dabac8da93f92270063f12ea&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B0016FWFDI&asins=B0016FWFDI&linkId=3ad0e5b94925bb34d1be5ebed1cbe806&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B00HF3XT58&asins=B00HF3XT58&linkId=24764a62965541dabbd78c1167f65004&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B071WWC8NX&asins=B071WWC8NX&linkId=cb6630af425e236ece884f6a82963eb8&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B00ATBRJRC&asins=B00ATBRJRC&linkId=b93dc07ba4d78c6ab8f2b75038dd8d3f&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B0106ZJ4R8&asins=B0106ZJ4R8&linkId=55ac325d810cccf3098319267cbdab96&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B000I48Q22&asins=B000I48Q22&linkId=475d77c087b27c25f00609dd89f99c68&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07BJ5GJJJ&asins=B07BJ5GJJJ&linkId=dc9b899b630646fb5e161fe77640222e&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B000QSTBNS&asins=B000QSTBNS&linkId=a581e3f7e67f623c2c8ca969ce7d3980&show_border=true&link_opens_in_new_window=true">
-      </iframe>
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07SKV41SG&asins=B07SKV41SG&linkId=e9591ec620fb8ba0c4f9d26b6fc6a6ed&show_border=true&link_opens_in_new_window=true"></iframe>
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+							<a href="#">
+								<img class="header-logo-image" src="dist/images/5.svg" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07ZLRGW84&asins=B07ZLRGW84&linkId=e7c86e8b44f11cb72c265c0e48c32533&show_border=true&link_opens_in_new_window=true"></iframe>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07Y564TJ5&asins=B07Y564TJ5&linkId=b9df84188df64c4229857aa5d2ca8e56&show_border=true&link_opens_in_new_window=true"></iframe>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B0839N6GSR&asins=B0839N6GSR&linkId=66be4fcf2be4f445fe73c8f1a2f481be&show_border=true&link_opens_in_new_window=true"></iframe>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B083QJ2KMP&asins=B083QJ2KMP&linkId=f0fa16d9369ef7d843b6bc04938ed58a&show_border=true&link_opens_in_new_window=true"></iframe>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B07BN9MKQ3&asins=B07BN9MKQ3&linkId=9e476025498009327bca3817d277daf7&show_border=true&link_opens_in_new_window=true"></iframe>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">Oh No!</h1>
+	                        <p class="hero-paragraph">Our system detected an issue with your connection. You have been flagged as a bot, using browser automation, have a connection originating from a location we do not work with, have an IP address associated with previous fraudulent orders, or using a service obfuscating your identity. To successfully access our shop: <ul>
+                                <li>Turn off your vpn</li>
+                                <li>Disable any browser automation plugins</li>
+                                <li>Do not use a headless browser</li>
+                                <li>Do not spoof your user agent or location</li>
+                                <li>Make sure your location is not subject to US export restrictions</lil>
+                                </ul></p>
+	                        <div class="hero-cta"></div>
+						</div>
+						<div class="hero-figure anime-element">
+							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+								<rect width="528" height="396" style="fill:transparent;" />
+							</svg>
+							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+							<div class="hero-figure-box hero-figure-box-05"></div>
+							<div class="hero-figure-box hero-figure-box-06"></div>
+							<div class="hero-figure-box hero-figure-box-07"></div>
+							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+						</div>
+                    </div>
+                </div>
+            </section>
 
-  <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=corgitech-20&language=en_US&marketplace=amazon&region=US&placement=B08RNMZZJ5&asins=B08RNMZZJ5&linkId=14b72028669389031284022003588b97&show_border=true&link_opens_in_new_window=true"></iframe>
+            
+
+        
     </div>
-  </div>
-  <style>
-    html,
-    body,
-    .grid-container {
-      display: flex;
-      height: 95%;
-      margin: 0;
-      background-color: rgb(145, 145, 145);
-      align-items: stretch;
 
-     
-      grid-template-columns: 1fr;
-      grid-template-rows: 100% 100;
-      gap: 2% 2% 2% 2%;
-      grid-template-areas:
-
-        " iframe "
-        " coupons ";
-    }
-
-    .coupons {
-      grid-area: coupons;
-    }
-
-    .iframe {
-      grid-area: iframe;
-    }
-  </style>
+    <script src="dist/js/main.min.js"></script>
 </body>
-
 </html>
